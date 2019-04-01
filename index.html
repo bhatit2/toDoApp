@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <div class="row">
+                <div class="col-12"><h2>to do list app</h2></div>
+                <div class="col-12">
+                    <button id="create-list" class="btn btn-primary">Create a list</button>
+                </div>
+            </div>
+        </div>
+        <form id="list-form">
+            <div id="title-row">
+                    <label for='title'>List title</label>
+                    <input id='title' name='title' type='text' placeholder="Enter the list title"/>
+            </div>
+            <div id="list-item-row">
+                    <label for='item'>Item </label>
+                    <input id='item' name='item' type='text' placeholder="Enter the item"/>
+                    <button id="form-btn">+</button>
+            </div>
+            
+            <div id="list-of-task"></div>
+            <button id="list-btn">Add List</button>
+            
+            <script src="./app.js"></script>
+        </form>
+        <div id="newList"></div>
+    </div>
+</body>
+
+</html>
